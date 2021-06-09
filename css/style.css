@@ -108,10 +108,12 @@ h3 { font-size: var(--fs-h3) }
 
 .section__title--intro {
     font-weight: var(--fw-reg);
+    color: white;
 }
 
 .section__title--intro strong {
     display: block;
+    color: white;
 }
 
 .section__title--us {
@@ -123,7 +125,14 @@ h3 { font-size: var(--fs-h3) }
     font-size: var(--fs-h3);
 }
 
-.section__subtitle--intro,
+.section__subtitle--intro{
+    background: var(--clr-accent);
+    padding: .25em 1em;
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
+}
+
+
 .section__subtitle--about {
     background: var(--clr-accent);
     padding: .25em 1em;
@@ -315,7 +324,7 @@ header {
     color: var(--clr-light);
     text-align: center;
 }*/
-.section__title--infos {
+.section__title--us {
     text-align: center
 }
 
@@ -357,7 +366,7 @@ header {
 }
 
 .Us {
-    background-color: #a6a6a6;
+    background-color: #303030;
 }
 
 
