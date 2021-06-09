@@ -73,7 +73,7 @@ strong { font-weight: var(--fw-bold) }
 .btn {
     display: inline-block;
     padding: .5em 2.5em;
-    background: green;
+    background: #B22525;
     color: white;
     text-decoration: none;
     cursor: pointer;
@@ -101,6 +101,11 @@ h1 { font-size: var(--fs-h1) }
 h2 { font-size: var(--fs-h2) }
 h3 { font-size: var(--fs-h3) }
 
+.our_team {
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+}
 
 .section__title {
     margin-bottom: .25em;
@@ -114,6 +119,16 @@ h3 { font-size: var(--fs-h3) }
 .section__title--intro strong {
     display: block;
     color: white;
+}
+
+.section__title--intro2 {
+    font-weight: var(--fw-reg);
+    color: black;
+}
+
+.section__title--intro2 strong {
+    display: block;
+    color: black;
 }
 
 .section__title--us {
@@ -153,11 +168,12 @@ h3 { font-size: var(--fs-h3) }
 header {
     display: flex;
     justify-content: space-between;
-    padding: 1em;
+    padding: .5em;
+    background-color:black;
 }
 
 .logo {
-    max-width: 278px;
+    max-width: 200px;
 }
 
 .nav {
@@ -266,12 +282,32 @@ header {
     box-shadow: var(--bs);
 }
 
+.intro2__img {
+    box-shadow: var(--bs);
+}
+
+
 .section__subtitle--intro {
+    display: inline-block;
+}
+
+.section__subtitle--intro2 {
     display: inline-block;
 }
 
 @media (min-width: 600px) {
     .intro {
+        display: grid;
+        width: min-content;
+        margin: 0 auto;
+        grid-column-gap: 1em;
+        grid-template-areas: 
+            "img title"
+            "img subtitle";
+        grid-template-columns: min-content max-content;
+    }
+
+    .intro2 {
         display: grid;
         width: min-content;
         margin: 0 auto;
@@ -287,7 +323,14 @@ header {
         min-width: 250px;
         position: relative;
         z-index: 2;
-    }    
+    }
+    
+    .intro2__img {
+        grid-area: img;
+        min-width: 250px;
+        position: relative;
+        z-index: 2;
+    }   
     
     .section__subtitle--intro {
         align-self: start;
@@ -314,6 +357,10 @@ header {
     margin-bottom: 4em;
 }
 
+.intro2 {
+    color: black; 
+    position: relative;
+}
 /*  My services section  */
 
 /*.my-services {
