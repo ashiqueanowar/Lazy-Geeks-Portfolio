@@ -142,7 +142,7 @@ header {
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 278px;
 }
 
 .nav {
@@ -223,7 +223,7 @@ header {
 .hamburger::after {
     background: var(--clr-accent);
     width: 2em;
-    height: 3px;
+    height: 4px;
     border-radius: 1em;
     transition: transform 250ms ease-in-out;
 }
