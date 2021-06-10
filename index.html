@@ -46,21 +46,10 @@
                                         <a class="nav-link" href="#about">About us</a>
                                 </li>
                                 <li class="nav-item">
-                                        <a class="nav-link" href="#">Contact</a>
+                                        <a class="nav-link" href="#work">0ur works</a>
                                 </li>
-                                <li class="nav-item active">
-                                        <a class="nav-link" href="#">Home
-                                                <span class="sr-only">(current)</span>
-                                        </a>
-                                </li>
-                                <li class="nav-item">
-                                        <a class="nav-link" href="#">About</a>
-                                </li>
-                                <li class="nav-item">
-                                        <a class="nav-link" href="#">Courses</a>
-                                </li>
-                                <li class="nav-item">
-                                        <a class="nav-link" href="#">Contact</a>
+                                 <li class="nav-item">
+                                        <a class="nav-link" href="#contact">Contact</a>
                                 </li>
                         </ul>
                 </div>
@@ -135,52 +124,52 @@
                 
                     <div class="portfolio">
                             <!-- Portfolio item 01 -->
-                            <a href="portfolio-item.html" class="portfolio__item">
+                            <a  class="portfolio__item">
                                 <img src="img/our_works/meghdoot.png" onclick="openModal();currentSlide(1)" alt="" class="portfolio__img">
                             </a>
                     
                             <!-- Portfolio item 02 -->
-                            <a href="portfolio-item.html" class="portfolio__item">
+                            <a  class="portfolio__item">
                                 <img src="img/our_works/meghdoot_certificate.jpg" onclick="openModal();currentSlide(2)" alt="" class="portfolio__img">
                             </a>
                     
                             <!-- Portfolio item 03 -->
-                            <a href="portfolio-item.html" class="portfolio__item">
+                            <a  class="portfolio__item">
                                 <img src="img/our_works/logo.png" onclick="openModal();currentSlide(3)" alt="" class="portfolio__img">
                             </a>
                     
                             <!-- Portfolio item 04 -->
-                            <a href="portfolio-item.html" class="portfolio__item">
+                            <a  class="portfolio__item">
                                 <img src="img/our_works/Blood_donation.png" onclick="openModal();currentSlide(4)" alt="" class="portfolio__img">
                             </a>
                     
                             <!-- Portfolio item 05 -->
-                            <a href="portfolio-item.html" class="portfolio__item">
+                            <a  class="portfolio__item">
                                 <img src="img/our_works/App.png" onclick="openModal();currentSlide(5)" alt="" class="portfolio__img">
                             </a>
                     
                             <!-- Portfolio item 06 -->
-                            <a href="portfolio-item.html" class="portfolio__item">
+                            <a  class="portfolio__item">
                                 <img src="img/our_works/app_run.jpg" onclick="openModal();currentSlide(6)" alt="" class="portfolio__img">
                             </a>
                     
                             <!-- Portfolio item 07 -->
-                            <a href="portfolio-item.html" class="portfolio__item">
+                            <a class="portfolio__item">
                                 <img src="img/portfolio-07.jpg" onclick="openModal();currentSlide(7)" alt="" class="portfolio__img">
                             </a>
                     
                             <!-- Portfolio item 08 -->
-                            <a href="#" class="portfolio__item">
+                            <a  class="portfolio__item">
                                 <img src="img/portfolio-08.jpg" onclick="openModal();currentSlide(8)" alt="" class="portfolio__img">
                             </a>
                     
                             <!-- Portfolio item 09 -->
-                            <a href="#" class="portfolio__item">
+                            <a  class="portfolio__item">
                                 <img src="img/portfolio-09.jpg" onclick="openModal();currentSlide(9)" alt="" class="portfolio__img">
                             </a>
                     
                             <!-- Portfolio item 0 0-->
-                            <a href="#" class="portfolio__item">
+                            <a  class="portfolio__item">
                                 <img src="img/portfolio-10.jpg" onclick="openModal();currentSlide(10)" alt="" class="portfolio__img">
                             </a>
                     </div>
@@ -290,8 +279,50 @@
                   </div>
         </div>
       </div>
+      <script>
+        // Open the Modal
+        function openModal() {
+          document.getElementById("myModal").style.display = "block";
+        }
+        
+        // Close the Modal
+        function closeModal() {
+          document.getElementById("myModal").style.display = "none";
+        }
+        
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
             <!-- Footer -->
-            <footer class="footer">
+            <footer class="footer" id="contact">
                     <!-- replace with your own email address -->
                     <a href="mailto:lazygeeks.guide@gmail.com" class="footer__link">lazygeeks.guide@gmail.com</a>
                     <ul class="social-list">
