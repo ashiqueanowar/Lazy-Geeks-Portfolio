@@ -129,6 +129,7 @@ h3 { font-size: var(--fs-h3) }
 .section__title--intro2 strong {
     display: block;
     color: black;
+    font-size: .7em;
 }
 
 .section__title--us {
