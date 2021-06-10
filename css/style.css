@@ -101,6 +101,14 @@ h1 { font-size: var(--fs-h1) }
 h2 { font-size: var(--fs-h2) }
 h3 { font-size: var(--fs-h3) }
 
+#quote {
+    font-size: 1.7em;
+}
+
+#speaker {
+    text-align: center;
+}
+
 .our_team {
     color: white;
     text-align: center;
@@ -352,10 +360,7 @@ header {
     /* background-blend-mode: multiply; */
     color: var(--clr-light);
     text-align: center;
-    color: white;
-}
-.infos {
-    margin-bottom: 4em;
+    
 }
 
 .intro2 {
