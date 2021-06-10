@@ -63,7 +63,7 @@ strong { font-weight: var(--fw-bold) }
 
 /* Buttons */
 
-.btn {
+.btns {
     display: inline-block;
     padding: .5em 2.5em;
     background: #B22525;
@@ -115,6 +115,7 @@ h3 { font-size: var(--fs-h3) }
 .section__title--intro {
     font-weight: var(--fw-reg);
     color: white;
+    font-size: 3em;
 }
 
 .section__title--intro strong {
@@ -171,7 +172,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: .5em;
-    background-color:black;
+    background-color: #212529;
 }
 
 .logo {
