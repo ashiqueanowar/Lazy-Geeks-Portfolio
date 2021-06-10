@@ -492,6 +492,7 @@ header {
     transform: scale(1.2);
     opacity: .5;
 }
+
 .row > .column {
     padding: 0 8px;
   }
