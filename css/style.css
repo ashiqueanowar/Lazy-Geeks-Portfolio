@@ -465,6 +465,11 @@ header {
     color: var(--clr-light);
     text-align: center;    
 }
+.my-work2 {
+    background-color: #353535;
+    color: var(--clr-light);
+    text-align: center;    
+}
 
 .portfolio {
     display: grid;
