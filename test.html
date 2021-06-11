@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   
+  <!-- My Work -->
+  <section class="my-work" id="work">
+    <h2 class="section__title section__title--work">0ur works</h2>
+    <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+
+    <div class="portfolio">
+           
+            <a  class="portfolio__item">
+                <img src="img/our_works/meghdoot.png" onclick="openModal();currentSlide(1)" alt="" class="portfolio__img">
+            </a>
+    
+           
+            <a  class="portfolio__item">
+                <img src="img/our_works/meghdoot_certificate.jpg" onclick="openModal();currentSlide(2)" alt="" class="portfolio__img">
+            </a>
+    
+            
+            <a  class="portfolio__item">
+                <img src="img/our_works/logo.png" onclick="openModal();currentSlide(3)" alt="" class="portfolio__img">
+            </a>
+    
+           
+            <a  class="portfolio__item">
+                <img src="img/our_works/Blood_donation.png" onclick="openModal();currentSlide(4)" alt="" class="portfolio__img">
+            </a>
+    
+           
+            <a  class="portfolio__item">
+                <img src="img/our_works/App.png" onclick="openModal();currentSlide(5)" alt="" class="portfolio__img">
+            </a>
+    
+            
+            <a  class="portfolio__item">
+                <img src="img/our_works/app_run.jpg" onclick="openModal();currentSlide(6)" alt="" class="portfolio__img">
+            </a>
+    
+           
+            <a class="portfolio__item">
+                <img src="img/portfolio-07.jpg" onclick="openModal();currentSlide(7)" alt="" class="portfolio__img">
+            </a>
+    
+          
+            <a  class="portfolio__item">
+                <img src="img/portfolio-08.jpg" onclick="openModal();currentSlide(8)" alt="" class="portfolio__img">
+            </a>
+    
+            
+            <a  class="portfolio__item">
+                <img src="img/portfolio-09.jpg" onclick="openModal();currentSlide(9)" alt="" class="portfolio__img">
+            </a>
+    
+          
+            <a  class="portfolio__item">
+                <img src="img/portfolio-10.jpg" onclick="openModal();currentSlide(10)" alt="" class="portfolio__img">
+            </a>
+    </div>
+</section>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal" style="max-width: 80%; max-height: 80%; margin: 0 auto">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 10</div>
+        <img src="img/our_works/meghdoot.png" style="width:60%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 10</div>
+        <img src="img/our_works/meghdoot_certificate.jpg" style="width:60%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 10</div>
+        <img src="img/our_works/logo.png" style="width:60%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">4 / 10</div>
+        <img src="img/our_works/Blood_donation.png" style="width:60%">
+      </div> 
+
+      <div class="mySlides">
+            <div class="numbertext">5 / 10</div>
+            <img src="img/our_works/App.png" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">6 / 10</div>
+            <img src="img/our_works/app_run.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">7 / 10</div>
+            <img src="img/portfolio-07.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">8 / 10</div>
+            <img src="img/portfolio-09.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">9 / 10</div>
+            <img src="img/portfolio-09.jpg" style="width:100%">
+          </div> 
+
+          <div class="mySlides">
+                <div class="numbertext">10 / 10</div>
+                <img src="img/portfolio-10.jpg" style="width:100%">
+              </div>
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+      <!-- Thumbnail image controls -->
+      <div class="column">
+        <img class="demo" src="img/our_works/meghdoot.png" onclick="currentSlide(1)" alt="Nature">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="img/our_works/meghdoot_certificate.jpg" onclick="currentSlide(2)" alt="Snow">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="img/our_works/Blood_donation.png" onclick="currentSlide(3)" alt="Mountains">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="img/our_works/Blood_donation.png" onclick="currentSlide(4)" alt="Lights">
+      </div>
+
+      <div class="column">
+            <img class="demo" src="img/our_works/App.png" onclick="currentSlide(5)" alt="Lights">
+          </div>
+
+          <div class="column">
+            <img class="demo" src="img/our_works/app_run.jpg" onclick="currentSlide(6)" alt="Nature">
+          </div>
+      
+          <div class="column">
+            <img class="demo" src="img/portfolio-09.jpg" onclick="currentSlide(7)" alt="Snow">
+          </div>
+      
+          <div class="column">
+            <img class="demo" src="img/portfolio-09.jpg" onclick="currentSlide(8)" alt="Mountains">
+          </div>
+      
+          <div class="column">
+            <img class="demo" src="img/portfolio-09.jpg" onclick="currentSlide(9)" alt="Lights">
+          </div>
+
+          <div class="column">
+                <img class="demo" src="img/portfolio-10.jpg" onclick="currentSlide(10)" alt="Lights">
+              </div>
+    </div>
+  </div>
+
+  <script>
+    // Open the Modal
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+    
+    // Close the Modal
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+    
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+
+</body>
