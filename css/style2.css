@@ -1,4 +1,6 @@
 .my_img {
-
-    background-color: #black;
+    background-color: Black;
+    color: var(--clr-light);
+    text-align: center;  
+    padding: 0;
 }
