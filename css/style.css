@@ -470,7 +470,12 @@ header {
     color: var(--clr-light);
     text-align: center;    
 }
-
+.my-work3{
+    background-color: #353535;
+    color: var(--clr-light);
+    text-align: center;  
+    padding:0;
+}
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
