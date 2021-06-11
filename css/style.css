@@ -474,7 +474,6 @@ header {
     background-color: #353535;
     color: var(--clr-light);
     text-align: center;  
-    padding:0;
 }
 .portfolio {
     display: grid;
